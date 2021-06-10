@@ -1,0 +1,245 @@
+<html>
+    <head>
+        <title>yaseen</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.js"></script>
+    </head>
+    <style>
+        #header{
+            height: 200px;
+            background-image:linear-gradient(to right,rgba(0,0,0,0.2),rgba(0,0,0,0.8)),url(img/headerbg.jpg);
+        }
+        #logo{
+            padding: 20px;
+        }
+        #logo img{
+            border-radius: 100px;
+            border: 2px solid yellow;
+            transition: 2s;
+            animation: rorate 3s infinite linear; 
+        }
+        @keyframes rorate{
+            from{transform: rotateY(0deg);}
+            to{transform: rotateY(360deg);}
+        }
+        #name{
+            text-transform: capitalize;
+            text-align: center;
+            margin-top: 30px;
+            
+        }
+        #name p{
+            font-size: 70px;
+            color: yellow;
+        }
+        #menu{
+            height: 40px;
+            background-color: yellow;
+          
+        }
+        ul li{color: black;
+            text-transform: uppercase;
+            font-weight: bold;
+            list-style-type: none;
+            float: left;
+            font-size: 25px;
+            display: block;
+            padding: 5px 15px;
+            
+        }
+        ul li:hover{
+            background-color: grey;
+       color: yellow
+            overflow: hidden;
+        }
+        .right{
+            color: black;
+            float: right;
+            list-style-type: none;
+            font-size: 20px;
+        }
+        #cat{
+            height: 1000px;
+            background-color: black;
+            padding: 10px 15px;
+        }
+        h1{
+            display: block;
+            background-color: yellow;
+            color: black;
+        }
+        p{
+            text-transform: capitalize;
+            font-size: 20px;
+            color: yellow;
+        }
+        #items{
+            padding: 15px 15px;
+            height: 1000px;
+            background-color: darkgray;
+            
+        }
+        #items-obj{
+            margin-top: 15px;
+            margin-left: 15px;
+            background-color: dimgray;
+            border-radius: 10px ;
+            border: 2px solid black;
+            height: 400px;
+            width: 300px;
+        }
+        #items-obj:hover{
+            border-radius: 10px ;
+            border: 2px solid yellow;
+        }
+        #footer{
+            background-color: dimgray;;
+            height: 250px;
+            color: yellow;
+        }
+    
+    </style>
+    <body>
+        
+        <div class="row" id="header">
+           <div class="col-md-4" id="logo">
+                <center>
+                <img src="img/logo.jpg" height="150px">
+                </center>
+           </div>
+            
+            <div class="col-md-8" id="name">
+                <center><p>TEST WEBSITE</p></center>
+            </div>
+        </div>
+        <div class="row" id="menu">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="items.html">items</a></li>
+                <li><a href="old.html">old gorceries</a></li>
+                <li><a href="complain.html">any complain</a></li>
+                <li><a href="about.html">about us</a></li>
+                <li class="right">
+                    <input type="text" placeholder="search"><button class="btn btn-info">search</button>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="row" id="main">
+            <div class="col-md-2" id="cat">
+                <center><h1>categories</h1>
+                <p>clothes</p>
+                <p>watches</p>
+                <p>gents items</p>
+                <p>ladies items</p>
+                <p>shoes</p>
+                <p>coat</p>
+                <p>.......</p>
+                <p>.......</p>
+                <p>.......</p>
+                <p>.......</p>
+                <p>.......</p>
+                <p>.......</p>
+                <p>.......</p>
+                <p>.......</p>
+                <p>.......</p>
+                <p>.......</p>
+                <p>.......</p>
+                <p>.......</p>
+                <p>.......</p>
+                <p>.......</p>
+                <p>.......</p>
+                </center>
+            </div>
+            <div class="col-md-10" id="items">
+               <h1>recent items</h1>
+                <div class="col-md-4" id="items-obj">
+                    <center><img src="img/shoes.png" height="150px" alt=""><h3><b>price/=Rs</b>&nbsp;2000</h3>
+                    <h3><b>discount/=Rs</b>&nbsp;20%</h3>
+                    <button class="btn btn-info btn-lg">buy now</button>
+                    <button class="btn btn-success btn-lg">add to cart</button>
+                    <button class="btn btn-primary btn-lg">view</button>
+                    </center>
+                </div>
+                <div class="col-md-4" id="items-obj">
+                    <center><img src="img/shoes.png" height="150px" alt=""><h3><b>price/=Rs</b>&nbsp;2000</h3>
+                    <h3><b>discount/=Rs</b>&nbsp;20%</h3>
+                    <button class="btn btn-info btn-lg">buy now</button>
+                    <button class="btn btn-success btn-lg">add to cart</button>
+                    <button class="btn btn-primary btn-lg">view</button>
+                    </center>
+                </div>
+                <div class="col-md-4" id="items-obj">
+                    <center><img src="img/shoes.png" height="150px" alt=""><h3><b>price/=Rs</b>&nbsp;2000</h3>
+                    <h3><b>discount/=Rs</b>&nbsp;20%</h3>
+                    <button class="btn btn-info btn-lg">buy now</button>
+                    <button class="btn btn-success btn-lg">add to cart</button>
+                    <button class="btn btn-primary btn-lg">view</button>
+                    </center>
+                </div>
+                <div class="col-md-4" id="items-obj">
+                    <center><img src="img/shoes.png" height="150px" alt=""><h3><b>price/=Rs</b>&nbsp;2000</h3>
+                    <h3><b>discount/=Rs</b>&nbsp;20%</h3>
+                    <button class="btn btn-info btn-lg">buy now</button>
+                    <button class="btn btn-success btn-lg">add to cart</button>
+                    <button class="btn btn-primary btn-lg">view</button>
+                    </center>
+                </div>
+                <div class="col-md-4" id="items-obj">
+                    <center><img src="img/shoes.png" height="150px" alt=""><h3><b>price/=Rs</b>&nbsp;2000</h3>
+                    <h3><b>discount/=Rs</b>&nbsp;20%</h3>
+                    <button class="btn btn-info btn-lg">buy now</button>
+                    <button class="btn btn-success btn-lg">add to cart</button>
+                    <button class="btn btn-primary btn-lg">view</button>
+                    </center>
+                </div>
+                <div class="col-md-4" id="items-obj">
+                    <center><img src="img/shoes.png" height="150px" alt=""><h3><b>price/=Rs</b>&nbsp;2000</h3>
+                    <h3><b>discount/=Rs</b>&nbsp;20%</h3>
+                    <button class="btn btn-info btn-lg">buy now</button>
+                    <button class="btn btn-success btn-lg">add to cart</button>
+                    <button class="btn btn-primary btn-lg">view</button>
+                    </center>
+                </div>
+            </div>
+            
+        </div>
+       <div class="row" id="footer">
+           <div class="col-md-4"><center>
+               <h3>about our website</h3>
+               <ul>
+                   <li>00000000</li>
+                   <li>00000000</li>
+                   <li>00000000</li>
+                   <li>00000000</li>
+                   <li>00000000</li>
+                   <li>00000000</li>
+               </ul>
+           </center></div>
+           <div class="col-md-4"><center>
+               <h3>about our website</h3>
+               <ul>
+                   <li>00000000</li>
+                   <li>00000000</li>
+                   <li>00000000</li>
+                   <li>00000000</li>
+                   <li>00000000</li>
+                   <li>00000000</li>
+               </ul>
+           </center></div>
+           <div class="col-md-4"><center>
+               <h3>about our website</h3>
+               <ul>
+                   <li>00000000</li>
+                   <li>00000000</li>
+                   <li>00000000</li>
+                   <li>00000000</li>
+                   <li>00000000</li>
+                   <li>00000000</li>
+               </ul>
+           </center></div>
+       </div>
+    </body>
+    
+</html>
